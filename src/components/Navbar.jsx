@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-scroll'
 import { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
 
@@ -9,23 +10,23 @@ const Navbar = () => {
     const links = [
         {
             id: 1,
-            link: 'Home'
+            link: 'home'
         },
         {
             id: 2,
-            link: 'About'
+            link: 'about'
         },
         {
             id: 3,
-            link: 'Portfolio'
+            link: 'projects'
         },
         {
             id: 4,
-            link: 'Experience'
+            link: 'skills'
         },
         {
             id: 5,
-            link: 'Contact'
+            link: 'contact'
         },
     ]
     return (
@@ -39,7 +40,9 @@ const Navbar = () => {
             <ul className="hidden md:flex">
                 {
                     links.map(({ id, link }) => (
-                        <li key={id} className="capitalize px-4 cursor-pointer font-medium text-gray-500 hover:scale-105 duration-200" >{link}</li>
+                        <li key={id} className="capitalize px-4 cursor-pointer font-medium text-gray-500 hover:scale-105 duration-200" >
+                            <Link to={link} smooth duration={500} >{link}</Link>
+                        </li>
 
                     ))
                 }
@@ -53,7 +56,9 @@ const Navbar = () => {
                     <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen text-gray-500 bg-gradient-to-b from-black to-gray-800" >
                         {
                             links.map(({ id, link }) => (
-                                <li key={id} className="px-4 py-6 cursor-pointer capitalize text-4xl" >{link}</li>
+                                <li key={id} className="px-4 py-6 cursor-pointer capitalize text-4xl" >
+                                    <Link to={link} smooth duration={500} onClick={() => (setNav(!nav))}>{link}</Link>
+                                </li>
                             ))
                         }
 
