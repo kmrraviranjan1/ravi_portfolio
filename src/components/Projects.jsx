@@ -2,7 +2,7 @@ import React from 'react'
 import proj1 from '../assets/projects_image/proj_orbitz.png'
 import proj2 from '../assets/projects_image/proj_naukri.png'
 import proj3 from '../assets/projects_image/proj_nordstrome.png'
-import proj4 from '../assets/projects_image/proj_orbitz.png'
+import proj4 from '../assets/projects_image/proj_hungerPark.png'
 import proj5 from '../assets/projects_image/proj_naukri.png'
 import proj6 from '../assets/projects_image/proj_nordstrome.png'
 
@@ -12,37 +12,49 @@ const Projects = () => {
             id: 1,
             displayPosition: 1,
             isActive: true,
-            src: proj1
+            src: proj1,
+            demo: "https://orbitz.netlify.app/",
+            code: "https://github.com/kmrraviranjan1/orbitz-clone"
         },
         {
             id: 2,
-            displayPosition: 2,
-            isActive: true,
-            src: proj2
+            displayPosition: 4,
+            isActive: false,
+            src: proj2,
+            demo: "",
+            code: ""
         },
         {
             id: 3,
             displayPosition: 3,
             isActive: true,
-            src: proj3
+            src: proj3,
+            demo: "https://kmrraviranjan1.github.io/nordstromClone/",
+            code: "https://github.com/kmrraviranjan1/nordstromClone"
         },
         {
             id: 4,
-            displayPosition: 4,
-            isActive: false,
-            src: proj4
+            displayPosition: 2,
+            isActive: true,
+            src: proj4,
+            demo: "https://hungerpark.netlify.app/",
+            code: "https://github.com/kmrraviranjan1/hunger_park"
         },
         {
             id: 5,
             displayPosition: 5,
             isActive: false,
-            src: proj5
+            src: proj5,
+            demo: "",
+            code: ""
         },
         {
             id: 6,
             displayPosition: 6,
             isActive: false,
-            src: proj6
+            src: proj6,
+            demo: "",
+            code: ""
         },
     ]
     return (
@@ -54,12 +66,16 @@ const Projects = () => {
                 </div>
                 <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-12 px-12 sm:px-0" >
                     {
-                        myProjects.filter((project) => (project.isActive)).sort((proj1, proj2) => (proj1.displayPosition - proj2.displayPosition)).map(({ id, src }) => (
+                        myProjects.filter((project) => (project.isActive)).sort((proj1, proj2) => (proj1.displayPosition - proj2.displayPosition)).map(({ id, src, demo, code }) => (
                             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
                                 <img src={src} alt="" className="rounded-md duration-200 hover:scale-105" />
                                 <div className="flex items-center justify-center">
-                                    <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Demo</button>
-                                    <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Code</button>
+                                    <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                                        <a href={demo} target="_blank" rel='noreferrer'>Demo</a>
+                                    </button>
+                                    <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                                        <a href={code} target="_blank" rel='noreferrer'>Code</a>
+                                    </button>
                                 </div>
                             </div>
                         ))
