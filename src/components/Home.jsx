@@ -6,7 +6,7 @@ import HeroImage from "../assets/raviNoBg.png"
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md'
 
 const Home = () => {
-    const words = [" Full Stack Developer", " Web App Developer", " Front-end Developer", " Backend Developer", " Android Developer"]
+    const words = [" Full Stack Developer", " Web App Developer", " Front-end Developer", " Backend Developer"," MERN Stack Developer", " Android Developer"]
     return (
         <div
             name="home"
@@ -22,16 +22,16 @@ const Home = () => {
 
                         <h1 className="heading-name my-2">
                             I'M
-                            <strong className="main-name text-5xl text-orange-300"> RAVI RANJAN KUMAR</strong>
+                            <strong className="main-name text-3xl md:text-5xl text-orange-300"> RAVI RANJAN KUMAR</strong>
                         </h1>
                         <p>and a
-                            <span className="text-3xl text-blue-400">
+                            <span className="text-2xl md:text-3xl text-blue-400">
                                 <Typewriter words={words} typeSpeed={300} deleteSpeed={200}  cursor cursorStyle='_' cursorColor='white' loop={0} />
                             </span>
                         </p>
                     </div>
                     {/* <h2 className="text-4xl sm:text-7xl font-bold text-white" >I am a Full stack developer</h2>
-                    <p className="py-4 text-gray-500 max-w-md" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium reprehenderit dolores libero aspernatur excepturi similique esse amet fugiat consectetur officiis atque iste dicta, ex ipsa saepe odit sequi accusantium odio!</p> */}
+                    <p className="py-4 text-gray-500 " >Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium reprehenderit dolores libero aspernatur excepturi similique esse amet fugiat consectetur officiis atque iste dicta, ex ipsa saepe odit sequi accusantium odio!</p> */}
                     <div>
                         <button className="group text-white w-fit px-6 py-3 my-3 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer" >
                             <Link to='projects'>Projects</Link>
