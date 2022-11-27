@@ -1,6 +1,6 @@
 import React from 'react'
 import proj1 from '../assets/projects_image/proj_orbitz.png'
-import proj2 from '../assets/projects_image/proj_naukri.png'
+import proj2 from '../assets/projects_image/proj_moviePedia.png'
 import proj3 from '../assets/projects_image/proj_nordstrome.png'
 import proj4 from '../assets/projects_image/proj_hungerPark.png'
 import proj5 from '../assets/projects_image/proj_naukri.png'
@@ -19,10 +19,10 @@ const Projects = () => {
         {
             id: 2,
             displayPosition: 4,
-            isActive: false,
+            isActive: true,
             src: proj2,
-            demo: "",
-            code: ""
+            demo: "https://itsamoviepedia.netlify.app/",
+            code: "https://github.com/kmrraviranjan1/movie_pedia"
         },
         {
             id: 3,
