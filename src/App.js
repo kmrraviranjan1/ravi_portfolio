@@ -3,6 +3,7 @@ import Contact from "./components/Contact";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
+import Resume from "./components/Resume";
 import Skills from "./components/Skills";
 import SocialLinks from "./components/SocialLinks";
 
@@ -13,6 +14,7 @@ function App() {
       <Home />
       <SocialLinks />
       <About />
+      <Resume/>
       <Projects />
       <Skills />
       <Contact />

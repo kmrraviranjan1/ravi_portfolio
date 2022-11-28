@@ -30,8 +30,7 @@ const Home = () => {
                             </span>
                         </p>
                     </div>
-                    {/* <h2 className="text-4xl sm:text-7xl font-bold text-white" >I am a Full stack developer</h2>
-                    <p className="py-4 text-gray-500 " >Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium reprehenderit dolores libero aspernatur excepturi similique esse amet fugiat consectetur officiis atque iste dicta, ex ipsa saepe odit sequi accusantium odio!</p> */}
+ 
                     <div>
                         <button className="group text-white w-fit px-6 py-3 my-3 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer" >
                             <Link to='projects'>Projects</Link>

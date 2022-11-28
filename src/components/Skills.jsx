@@ -59,7 +59,7 @@ const Skills = () => {
         },
     ]
     return (
-        <div name="skills" className="w-full h-screen bg-gradient-to-b from-gray-800 to-black" >
+        <div name="skills" className="w-full h-screen bg-gradient-to-b to-gray-800 from-black" >
             <div className="max-w-screen-lg w-full h-full text-white mx-auto p-4 flex flex-col justify-center" >
                 <div>
                     <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">Technical Skills</p>

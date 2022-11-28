@@ -18,19 +18,23 @@ const Navbar = () => {
         },
         {
             id: 3,
-            link: 'projects'
+            link: 'resume'
         },
         {
             id: 4,
-            link: 'skills'
+            link: 'projects'
         },
         {
             id: 5,
+            link: 'skills'
+        },
+        {
+            id: 6,
             link: 'contact'
         },
     ]
     return (
-        <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed " >
+        <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed z-50" >
             <div>
                 <h1 className="text-5xl ml-2 font-signature">
                     Ravi
@@ -53,7 +57,7 @@ const Navbar = () => {
             </div>
             {
                 nav && (
-                    <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen text-gray-500 bg-gradient-to-b from-black to-gray-800" >
+                    <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen text-gray-500 bg-gradient-to-b from-black to-gray-800 z-5" >
                         {
                             links.map(({ id, link }) => (
                                 <li key={id} className="px-4 py-6 cursor-pointer capitalize text-4xl" >
