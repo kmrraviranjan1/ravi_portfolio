@@ -9,8 +9,8 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 const Resume = () => {
     return (
-        <div name="resume" className="w-full bg-gradient-to-b from-black to-gray-800 border-b-2" >
-            <div className="max-w-screen-lg p-4 mx-auto w-full flex flex-col justify-center">
+        <div name="resume" className="w-full bg-gradient-to-b p-2 from-black to-gray-800" >
+            <div className="max-w-screen-lg pt-20 pb-20 mx-auto w-full flex flex-col justify-center">
 
                 <div className="flex justify-center">
                     <button className="group text-white w-fit px-6 py-3 my-3 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer" >
@@ -22,11 +22,15 @@ const Resume = () => {
                 </div>
 
                 <div>
-                    <VerticalTimeline lineColor=" #D4AF37">
+                    <VerticalTimeline lineColor=" #D4AF37" animate={true}>
                         <VerticalTimelineElement
                             className="text-white"
                             date="Dec 2021 - Present"
-                            contentStyle={{ background: "rgb(33, 150, 243)" }}
+                            // style={{padding:0}}
+                            intersectionObserverProps={{default: { rootMargin: '0px 0px 20px 0px' }}}
+                            contentStyle={{ background: "rgb(33, 150, 243)" ,backgroundColor: '#8BC6EC',
+                            backgroundImage: `linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%)`
+                            }}
                             contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
                             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
                             icon={<MdWork />}
@@ -40,7 +44,8 @@ const Resume = () => {
                         </VerticalTimelineElement>
                         <VerticalTimelineElement
                             className="text-white"
-                            contentStyle={{ background: "rgb(33, 150, 243)" }}
+                            contentStyle={{ background: "rgb(33, 150, 243)",backgroundColor: '#8BC6EC',
+                            backgroundImage: `linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%)` }}
                             contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
                             date="March 2021 - Nov 2021"
                             iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
@@ -58,8 +63,9 @@ const Resume = () => {
                         <VerticalTimelineElement
                             className="text-white"
                             date="Aug 2018 - Jan 2021"
-                            contentStyle={{ background: "rgb(33, 150, 243)"}}
-                            contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)",padding:'0' }}
+                            contentStyle={{ background: "rgb(33, 150, 243)",backgroundColor: '#8BC6EC',
+                            backgroundImage: `linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%)`}}
+                            contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
                             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
                             icon={<MdWork />}
                         >
@@ -72,7 +78,8 @@ const Resume = () => {
                         </VerticalTimelineElement>
                         <VerticalTimelineElement
                             className="text-white"
-                            contentStyle={{ background: "rgb(33, 150, 243)",padding:'0'}}
+                            contentStyle={{ background: "rgb(33, 150, 243)",backgroundColor: '#8BC6EC',
+                            backgroundImage: `linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%)`}}
                             contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
                             date="2013 - 2017"
                             iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}

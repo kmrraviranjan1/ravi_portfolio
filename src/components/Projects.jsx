@@ -57,10 +57,11 @@ const Projects = () => {
             code: ""
         },
     ]
+    
     return (
-        <div name="projects" className="w-full bg-gradient-to-b to-black from-gray-800 text-white md:h-screen" >
-            <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-                <div className='pb-8 mt-2'>
+        <div name="projects" className="w-full bg-gradient-to-b p-2 to-black from-gray-800 text-white" >
+            <div className="max-w-screen-lg p-4 pt-20 mx-auto flex flex-col justify-center w-full h-full">
+                <div className='pb-8 mt-2 '>
                     <p className='text-4xl font-bold inline border-b-4 border-gray-500'>Projects</p>
                     <p className="py-6">Checkout some of my work</p>
                 </div>
